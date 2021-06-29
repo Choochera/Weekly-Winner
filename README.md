@@ -5,3 +5,14 @@ Python CMD line program that utilizes ones Robinhood brokerage account and assis
 IMPORTANT: The options information is not in real-time but rather is collected by dictionaries that can be updated whenever the user wishes. The average run time is +/35 seconds for updating either dictionary. This program produces best results updating afterhours when options are not being traded to support educated actions for the follow trading day.
 
 DISCLAIMER: I am not fit to provide financial advice and the usability and application of this program to ones stock market endeavors is entirely up to the discretion of the user. I am not responsible for any poor decisions/investments made by any user spurred by the use of this code.
+
+# Necessary installs
+
+1. robin_stocks
+  unofficial Robinhood API 
+  instructions to install provided here: https://algotrading101.com/learn/robinhood-api-guide/
+  documentation: https://github.com/jmfernandes/robin_stocks
+2. numpy
+  https://numpy.org/install/
+3. sympy
+  https://pypi.org/project/sympy/
