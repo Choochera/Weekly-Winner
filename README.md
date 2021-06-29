@@ -8,7 +8,7 @@ IMPORTANT: The options information is not in real-time but rather is collected b
 
 DISCLAIMER: I am not fit to provide financial advice and the usability and application of this program to ones stock market endeavors is entirely up to the discretion of the user. I am not responsible for any poor decisions/investments made by any user spurred by the use of this code.
 
-## Example Output
+## Example Output with delta < 0.35
 
 ![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/table_sample.PNG "Home Screen")
 
