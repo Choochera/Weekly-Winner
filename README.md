@@ -4,4 +4,4 @@ Python CMD line program that utilizes ones Robinhood brokerage account and assis
 
 IMPORTANT: The options information is not in real-time but rather is collected by dictionaries that can be updated whenever the user wishes. The average run time is +/35 seconds for updating either dictionary. This program produces best results updating afterhours when options are not being traded to support educated actions for the follow trading day.
 
-DISCLAIMER: I am not fit to provided financial advice and the usability and applicability of this program to ones stock market endeavors is entirely up to the discretion of the user. I am not responsible for any poor decisions/investments made by any user spurred by the use of this code.
+DISCLAIMER: I am not fit to provide financial advice and the usability and application of this program to ones stock market endeavors is entirely up to the discretion of the user. I am not responsible for any poor decisions/investments made by any user spurred by the use of this code.
