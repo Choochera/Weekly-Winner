@@ -1,4 +1,4 @@
-![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/Source/dashboard.PNG "Home Screen")
+![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/Source/dashboard.png "Home Screen")
 
 # Weekly Winner
 
