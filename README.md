@@ -16,6 +16,9 @@ DISCLAIMER: I am not fit to provide financial advice and the usability and appli
 
 ![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/Source/output.PNG "Output")
 
+# How to run:
+
+python Weekly_Winner.py
 
 # Necessary installs
 
