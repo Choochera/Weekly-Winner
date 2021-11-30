@@ -29,5 +29,5 @@ python Weekly_Winner.py
 
 2. pandas
 
-# I want to thank the people over at the Robin Stocks github for making this possible - I'm new to financial programming and this has netted me more than a few dollars in use!
+# I want to thank the people over at the Robin Stocks github for making this possible - I'm new to financial programming and this has netted me more than a few dollars in use and priceless experience!
   https://github.com/jmfernandes/robin_stocks
