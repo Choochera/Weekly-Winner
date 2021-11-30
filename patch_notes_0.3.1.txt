@@ -1,0 +1,12 @@
+Completed:
+- Fixed infinite loop error when CSV file is already open
+- Fixed error where 'isolate' hits FileNotFoundError when the dictionaries 
+	do not exist
+- Changed dictionary data from string to list
+- Added 'implied volatility' to data set
+- Fixed error where some stocks dont have either puts or calls 
+	after updating dictionaries
+- Fixed error producing multiples in list of skipped stocks
+
+Not:
+- Add maximum number of contracts
