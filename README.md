@@ -1,4 +1,4 @@
-![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/Source/dashboard.PNG "Home Screen")
+![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/Assets/dashboard.PNG "Home Screen")
 
 # Weekly Winner
 
@@ -6,15 +6,17 @@ Python CMD line program that utilizes one's Robinhood brokerage account and assi
 
 IMPORTANT: The options information is not in real-time but rather is collected by dictionaries that can be updated whenever the user wishes. The average run time is +/35 seconds for updating either dictionary. This program produces best results updating afterhours when options are not being traded to support educated actions for the follow trading day.
 
+ALSO IMPORTANT: This program operates under the assumption that the GLOBAL output is set to open(os.devnull, "w") with the robin_stocks globals.py. It will work if it remains stdout but there will be graphical errors.
+
 DISCLAIMER: I am not fit to provide financial advice and the usability and application of this program to ones stock market endeavors is entirely up to the discretion of the user. I am not responsible for any poor decisions/investments made by any user spurred by the use of this code.
 
 ## Example of updating call/put dictionary data
 
-![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/Source/update.PNG "Update Put")
+![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/Assets/update.PNG "Update Put")
 
 ## Example Output with delta < 0.25
 
-![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/Source/output.PNG "Output")
+![alt text](https://github.com/Choochera/WeeklyWinner/blob/main/Assets/output.PNG "Output")
 
 
 # Necessary installs
@@ -25,3 +27,4 @@ DISCLAIMER: I am not fit to provide financial advice and the usability and appli
   documentation: https://github.com/jmfernandes/robin_stocks
 
 2. pandas
+3. getPass
