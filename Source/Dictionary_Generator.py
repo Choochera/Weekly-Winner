@@ -27,7 +27,6 @@ Friday = nextFriday()
 skipped_stocks = []
 dictionary = dict()
 MAX_NUM_THREADS = 16
-num_threads = MAX_NUM_THREADS
 
 #Returns closest strike price to current price (lesser than if puts, greater than if calls)
 def closestStrike(ticker, date, optionType):
@@ -152,7 +151,7 @@ def updateDictionary(option, date):
     threads = []
     start = time.time()
 
-    for i in range(num_threads):
+    for i in range(MAX_NUM_THREADS):
         threads.append(generatorThread(i + 1, "thread_" + str(i + 1), i+1, option, date))
         threads[i].start()
     for t in threads:
@@ -161,7 +160,7 @@ def updateDictionary(option, date):
     weeklyOptions_flags = dict()
 
     print("\nValidating data...")
-    for i in range(num_threads):
+    for i in range(MAX_NUM_THREADS):
         threads.append(validatorThread(i + 1, "thread_" + str(i + 1), i+1, option, date))
         threads[i].start()
     for t in threads:

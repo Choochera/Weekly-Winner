@@ -33,3 +33,11 @@ def nextFriday():
     while day.weekday() != 4:
         day = day + datetime.timedelta(days = 1)
     return str(day).split(" ")[0]
+
+#Checks if idle an instance of idle is already running the background
+def isIdleOpen():
+    import subprocess
+    subprocess = subprocess.Popen("wmic process get description, executablepath", shell = True, stdout = subprocess.PIPE)
+    subprocess = subprocess.stdout.read()
+    subprocess = subprocess.decode("utf-8")
+    return "pythonw.exe" not in subprocess

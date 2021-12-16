@@ -1,5 +1,5 @@
 from Dictionary_Generator import updateDictionary
-from Data_Filter import nextFriday
+from Data_Filter import nextFriday, isIdleOpen
 import json
 import stat
 import robin_stocks.robinhood as rh
@@ -212,11 +212,11 @@ def main():
                 print("Invalid input")
         elif inputText.lower().strip() == "reset equity":
             balance = rh.profiles.load_portfolio_profile("equity")
-        elif inputText.lower() == "exit":
-            
-            here = os.path.dirname(os.path.abspath(__file__))
-            filename = os.path.join(here, 'idle.pyw')
-            exec(open(filename).read())
+        elif inputText.lower() == 'exit':
+            #Check if auto-update is already running, if not then run.
+            if isIdleOpen():
+                os.system("start pythonw idle.pyw")
+            print("Goodbye!")
         else: print("Invalid input")
 
 if __name__ == "__main__":
