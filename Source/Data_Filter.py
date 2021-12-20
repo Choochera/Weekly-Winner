@@ -25,13 +25,32 @@ def updateCSV():
     r = requests.get(url, allow_redirects = True)
     open("../Data/weeklysmf.csv", 'wb').write(r.content)
 
+def updateHolidays():
+    url = "https://www.cboe.com/us/equities/holidays/csv/"
+    r = requests.get(url, allow_redirects = True)
+    open("../Data/holidays.csv", 'wb').write(r.content)
+
 #Function that returns date of next Friday
 def nextFriday():
+    updateHolidays()
+    with open('../Data/holidays.csv') as File:
+        holiday_dates = []
+        reader = csv.DictReader(File)
+        try:
+            for row in reader:
+                try:
+                    holiday_dates.append(row[None][0])
+                except:
+                    pass
+        except KeyError as err:
+            print("Error retrieving holiday data")
     day = datetime.datetime.today()
     if day.strftime('%A') == "Friday":
         day = day + datetime.timedelta(days = 1)
     while day.weekday() != 4:
         day = day + datetime.timedelta(days = 1)
+    if (str(day).split(" ")[0]) in holiday_dates:
+        day = day - datetime.timedelta(days = 1)
     return str(day).split(" ")[0]
 
 #Checks if idle an instance of idle is already running the background

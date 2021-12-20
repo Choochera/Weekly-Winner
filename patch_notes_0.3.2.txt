@@ -9,6 +9,7 @@ Completed:
 - Added last modified statistic
 - Fixed login error
 - Limited instances of IDLE dictionary updates
+- Holidays are accounted for when calculating next expiration date
 Not:
 - Every Friday at 12:00 PM send a text of top 5 put sale opportunities
 - Add GUI
